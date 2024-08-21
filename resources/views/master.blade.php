@@ -41,24 +41,17 @@
       <div class="header-top-inner">
         <div class="cnt-account">
           <ul class="list-unstyled">
-            <li><a href="https://shopee.vn/thuysinhmoc"><i class=""></i>Shopeee</a></li>
-            <li><a href="https://www.facebook.com/thanh.phon.940"><i class=""></i>Facebook</a></li>
-            <li><a href="https://zaloapp.com/qr/p/mhrh7jnr229h"><i class=""></i>Đối Tác Winmart</a></li>
-            
-            
-            {{-- <li><a href="{{url('like')}}"><i class="icon fa fa-heart"></i>Sản Phẩm Yêu Thích</a></li> --}}
             <li><a href="{{url('cartlist')}}"><i class="icon fa fa-shopping-cart"></i>Giỏ Hàng</a></li>
             <li><a href="#"><i class="icon fa fa-check"></i>Thanh Toán</a></li>
             @if(Auth::check())
             <li><a href="{{url('customer')}}"><i class="icon fa fa-user"></i><b>{{Auth::User()->name}}</b></a></li>
-            
-            
             @endif
             @if(Auth::check())
             <li><a href="{{url('logout')}}"><i class="icon fa fa-lock"></i>Đăng Xuất</a></li>
             @else
-            <li><a href="{{url('sign')}}"><i class="icon fa fa-lock"></i>Đăng Nhập</a></li>
+            <li><a href="{{url('sign')}}"><i class="icon fa fa-lock"></i>Khách Hàng</a></li>
             @endif
+            <li><a href="{{url('sign_partner')}}"><i class="icon fa fa-lock"></i>Đối Tác Winmart</a></li>
             <li> <a href="{{url('contact')}}">Liên Hệ Tư Vấn</a> </li>
           </ul>
         </div>
@@ -97,7 +90,6 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-3 logo-holder"> 
           <!-- ============================================================= LOGO ============================================================= -->
-          <div class="logo"> <a href="{{url('home')}}"> <img src="{{asset('assets\images')}}" alt="logo" height="100" width="100" style="position:absolute; left:110px; top:-42px;"> </a> </div>
           <!-- /.logo --> 
           <!-- ============================================================= LOGO : END ============================================================= --> 
         </div>
@@ -171,6 +163,7 @@
             @endif
             <!-- /.dropdown-menu--> 
           </div>
+          <div class="logo"> <a href="{{url('home')}}"> <img src="{{asset('assets\images\winmartlogo.png')}}" alt="logo" height="50" width="180" style="position:absolute; left:240px; top:0px;"> </a> </div>
           <!-- /.dropdown-cart --> 
           
           <!-- ============================================================= SHOPPING CART DROPDOWN : END============================================================= --> </div>
@@ -338,7 +331,7 @@
         <!-- /.col -->
         
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="logo"> <a href="{{url('home')}}"> <img src="{{asset('assets\images\logo97aqua.png')}}" alt="logo" height="200" width="200" style="position:absolute; left:30px; top:0px;"> </a> </div>
+          <div class="logo"> <a href="{{url('home')}}"> <img src="{{asset('assets\images\winmart.png')}}" alt="logo" height="100" width="350" style="position:absolute; left:30px; top:0px;"> </a> </div>
           <!-- /.module-body --> 
         </div>
       </div>

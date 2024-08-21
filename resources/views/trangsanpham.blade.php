@@ -66,7 +66,7 @@
 						</div><!-- /.hot-deal-wrapper -->
 
 						<div class="product-info text-left m-t-20">
-							<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+							<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 							<div class="rating rateit-small"></div>
 
 							<div class="product-price">	
@@ -134,7 +134,7 @@
 						</div><!-- /.hot-deal-wrapper -->
 
 						<div class="product-info text-left m-t-20">
-							<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+							<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 							<div class="rating rateit-small"></div>
 
 							<div class="product-price">	
@@ -202,7 +202,7 @@
 						</div><!-- /.hot-deal-wrapper -->
 
 						<div class="product-info text-left m-t-20">
-							<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+							<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 							<div class="rating rateit-small"></div>
 
 							<div class="product-price">	
@@ -527,7 +527,7 @@
 								
 								<div id="description" class="tab-pane in active">
 									<div class="product-tab">
-										<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										<p class="text"></p>
 									</div>	
 								</div><!-- /.tab-pane -->
 
@@ -641,7 +641,7 @@
 			
 		
 		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+			<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 			<div class="rating rateit-small"></div>
 			<div class="description"></div>
 
@@ -697,7 +697,7 @@
 			
 		
 		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+			<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 			<div class="rating rateit-small"></div>
 			<div class="description"></div>
 
@@ -753,7 +753,7 @@
 			
 		
 		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+			<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 			<div class="rating rateit-small"></div>
 			<div class="description"></div>
 
@@ -809,7 +809,7 @@
 			
 		
 		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+			<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 			<div class="rating rateit-small"></div>
 			<div class="description"></div>
 
@@ -865,7 +865,7 @@
 			
 		
 		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+			<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 			<div class="rating rateit-small"></div>
 			<div class="description"></div>
 
@@ -921,7 +921,7 @@
 			
 		
 		<div class="product-info text-left">
-			<h3 class="name"><a href="detail.html">Floral Print Buttoned</a></h3>
+			<h3 class="name"><a href="detail.html">Đang cập nhật</a></h3>
 			<div class="rating rateit-small"></div>
 			<div class="description"></div>
 

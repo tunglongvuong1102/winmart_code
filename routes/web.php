@@ -4,6 +4,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\GioHang;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,10 +20,17 @@ use App\Models\GioHang;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/data-form', function () {
+    return view('product.add');
+});
+
+Route::post('/add-data', [ProductController::class, 'store'])->name('product.store');
+Route::get('/product/{productId}', [ProductController::class, 'show'])->name('product.show');
+
 Route::get('/', 'App\Http\Controllers\PageController@getTrangChu');
 Route::get('home', 'App\Http\Controllers\PageController@getTrangChu');
 Route::get('category/{loai}', 'App\Http\Controllers\PageController@getTrangLoaiSanPham')->name('category');
-Route::get('product/{id}', 'App\Http\Controllers\PageController@getTrangSanPham')->name('product');
+Route::get('products/{id}', 'App\Http\Controllers\PageController@getTrangSanPham')->name('products');
 /*Route::get('product', 'App\Http\Controllers\PageController@getTrangSanPham');
 */
 view()->composer('tranggiohang', function ($view) {
@@ -37,6 +45,7 @@ view()->composer('tranggiohang', function ($view) {
         ]);
     }
 });
+
 Route::get('cartlist', 'App\Http\Controllers\PageController@getTrangGioHang');
 Route::get('like', 'App\Http\Controllers\PageController@getTrangYeuThich');
 Route::get('sign', 'App\Http\Controllers\PageController@getTrangDangNhap');
@@ -51,6 +60,10 @@ Route::post('postsign', 'App\Http\Controllers\PageController@postTaiKhoanKhachHa
 Route::post('postlogin', 'App\Http\Controllers\PageController@postDangNhap');
 Route::get('logout', 'App\Http\Controllers\PageController@postDangXuat');
 Route::get('search', 'App\Http\Controllers\PageController@getTimKiem');
+
+Route::post('postsign_partner', 'App\Http\Controllers\PageController@postTaiKhoanDoiTac');
+Route::get('sign_partner', 'App\Http\Controllers\PageController@getTrangDangNhapDoiTac');
+Route::post('postlogin_partner', 'App\Http\Controllers\PageController@postDangNhapDoiTac');
 
 Route::get('customer', 'App\Http\Controllers\PageController@getTrangKhachHang');
 Route::get('history', 'App\Http\Controllers\PageController@getTrangLichSuDatHang');

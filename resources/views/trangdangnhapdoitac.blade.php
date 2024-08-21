@@ -5,7 +5,7 @@
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
 				<li><a href="home.html">Home</a></li>
-				<li class='active'>Login</li>
+				<li class='active'>Partner Login</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -20,17 +20,17 @@
 	<h4 class="">Đăng Nhập</h4>
 	{{-- <p class="">Hello, Welcome to your account.</p> --}}
 	<div class="social-sign-in outer-top-xs">
-		<a href="#" class="facebook-sign-in"><i class="fa fa-facebook"></i> Đăng Nhập Bằng Facebook</a>
+		
 	</div>
-	<form class="register-form outer-top-xs" role="form" action="{{url('postlogin')}}" method="post">
+	<form class="register-form outer-top-xs" role="form" action="{{url('postlogin_partner')}}" method="post">
 		@csrf
 		<div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Số Điện Thoại: <span>*</span></label>
-		    <input name="phone" class="form-control unicase-form-control text-input" >
+		    <label class="info-title" for="exampleInputEmail1">Số Điện Thoại Doanh Nghiệp: <span>*</span></label>
+		    <input name="SDT" class="form-control unicase-form-control text-input" >
 		</div>
 	  	<div class="form-group">
 		    <label class="info-title" for="exampleInputPassword1">Mật Khẩu: <span>*</span></label>
-		    <input name="password" type="password" class="form-control unicase-form-control text-input">
+		    <input name="MatKhau" type="password" class="form-control unicase-form-control text-input">
 		</div>
 		<div class="radio outer-xs">
 		  	<label>
@@ -45,19 +45,19 @@
 
 <!-- create a new account -->
 <div class="col-md-6 col-sm-6 create-new-account">
-	<h4 class="checkout-subtitle">Tạo Tài Khoản Khách Hàng</h4>
-	<form class="register-form outer-top-xs" role="form" action="{{url('postsign')}}" method="post">
+	<h4 class="checkout-subtitle">Tạo Tài Khoản Đối Tác</h4>
+	<form class="register-form outer-top-xs" role="form" action="{{url('postsign_partner')}}" method="post">
 		@csrf
 		<div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Họ và Tên Khách Hàng <span>*</span></label>
-		    <input name="HoTen" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
+		    <label class="info-title" for="exampleInputEmail1">Tên Doanh Nghiệp <span>*</span></label>
+		    <input name="TenDoiTac" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
 		</div>
 		<div class="form-group">
-	    	<label class="info-title" for="exampleInputEmail2">Địa Chỉ Email Khách Hàng<span>*</span></label>
+	    	<label class="info-title" for="exampleInputEmail2">Địa Chỉ Email Doanh Nghiệp<span>*</span></label>
 	    	<input name="Email" class="form-control unicase-form-control text-input" id="exampleInputEmail2">
 	  	</div>
         <div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Số Điện Thoại <span>*</span></label>
+		    <label class="info-title" for="exampleInputEmail1">Số Điện Thoại Doanh Nghiệp <span>*</span></label>
 		    <input name="SDT" class="form-control unicase-form-control text-input" id="exampleInputEmail1">
 		</div>
         <div class="form-group">

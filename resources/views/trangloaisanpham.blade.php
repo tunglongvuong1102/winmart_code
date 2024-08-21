@@ -246,7 +246,7 @@
                     <div class="products">
                       <div class="product">
                         <div class="product-image">
-                          <div class="image"> <a href="{{ url('product', ['id' => $p->MaSanPham]) }}"><img src="{{ asset('assets/images/products/' . $p->Anh) }}" alt="" height="250"></a> </div>
+                          <div class="image"> <a href="{{ url('products', ['id' => $p->MaSanPham]) }}"><img src="{{ asset('assets/images/products/' . $p->Anh) }}" alt="" height="250"></a> </div>
                           <!-- /.image -->
                           
                           <div class="tag new"><span>new</span></div>
@@ -254,7 +254,7 @@
                         <!-- /.product-image -->
                         
                         <div class="product-info text-left">
-                          <h3 class="name"><a href="{{ url('product', ['id' => $p->MaSanPham]) }}">{{$p->TenSanPham}}</a></h3>
+                          <h3 class="name"><a href="{{ url('products', ['id' => $p->MaSanPham]) }}">{{$p->TenSanPham}}</a></h3>
                           <div class="rating rateit-small"></div>
                           <div class="description"></div>
                           <div class="product-price"> <span class="price"> {{$p->GiaKhuyenMai}} </span> <span class="price-before-discount">{{$p->GiaGoc}}</span> </div>

@@ -68,6 +68,9 @@ class PageController extends Controller
     public function getTrangDangNhap(){
         return view('trangdangnhap');
     }
+    public function getTrangDangNhapDoiTac(){
+        return view('trangdangnhapdoitac');
+    }
 
     public function getTrangDatHang(){
         $product_cart = Session::has('cart') ? Session::get('cart')->items : [];
@@ -114,6 +117,15 @@ class PageController extends Controller
         $p->save();
         return redirect()->back();
     }
+    public function postThongTinDoiTac(Request $req){
+        $p=new DoiTac;
+        $p->MaDoiTac=$maDT;
+        $p->TenDoiTac=$req->TenDT;
+        $p->DiaChi=$req->DiaChi;
+        $p->SDT=$req->SDT;
+        $p->save();
+        return redirect()->back();
+    }
 
     public function postTaiKhoanKhachHang(Request $req){
         $p=new User;
@@ -125,21 +137,18 @@ class PageController extends Controller
         
         return redirect()->back();
     }
+    public function postTaiKhoanDoiTac(Request $req){
+        $p=new User;
+        $p->name=$req->TenDoiTac;
+        $p->phone=$req->SDT;
+        $p->email=$req->Email;
+        $p->password = Hash::make($req->MatKhau);
+        $p->save();
+        
+        return redirect()->back();
+    }
 
     public function postDangNhap(Request $req){
-        /*$this->validate($req,
-            [
-                'SDT'=>'required|email',
-                'MatKhau'=>'required|min:6|max:20'
-            ],
-            [
-                'SDT.required'=>'Vui lòng nhập số điện thoại',
-                'SDT.SDT'=>'Số điện thoại không chính xác',
-                'MatKhau.required'=>'Vui lòng nhập mật khẩu',
-                'MatKhau.min'=>'Mật khẩu ít nhất 6 kí tự',
-                'MatKhau.max'=>'Mật khẩu không quá 20 kí tự'
-            ]
-        );*/
 
         $credentials = array('phone'=>$req->phone,'password'=>$req->password);
 
@@ -151,6 +160,18 @@ class PageController extends Controller
             return redirect()->back();
         }
     }
+    public function postDangNhapDoiTac(Request $req){
+
+        $credentials = array('phone'=>$req->SDT,'password'=>$req->MatKhau);
+
+        if(Auth::attempt($credentials)){
+            return redirect('/data-form');
+        }
+        else{
+            return redirect()->back();
+        }
+    }
+
 
     public function postDangXuat(Request $req){
         Auth::logout();
